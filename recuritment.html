@@ -1,0 +1,292 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="recuritment.css"/>
+    </head>
+    <body>
+        <div class="flex-container  navbar  fixed-top text-light "style="background-color:#00203FFF;opacity:0.9" >
+            <img src="#" alt="LOGO"/>
+            <ul class="list">
+                <li class="list1"><a href="#">Home</a></li>
+                <li class="list1"><a href="welcome.html">About Us</a></li>
+                <li class="list1"><a href="#">Terms</a></li>
+                <li class="list1"><a href="#">Career</a></li>
+                <li class="list1"><a href="#">Contact Us</a></li>
+                <li class="col-lg-1 col-md-2 list1" style="border-width: 1px;border-radius:8px;background-color: #ADEFD1FF;box-shadow: 0px 0px 7px silver;"><a href="#" style="color: black;">Get A Quote</a></li>
+            </ul>
+        </div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="#">HOME</a>
+              <a href="#">About Us</a>
+              <a href="#">Terms</a>
+              <a href="#">Career</a>
+              <a href="#">Contact Us</a>
+            </div>
+          </div>
+          <div class=" container-fluid smallnav text-light" style="overflow: hidden;background-color: #00203FFF;">
+            <img src="logo" alt="logo" />
+            <span style="font-size:30px;cursor:pointer;float: right;padding: 1%;" onclick="openNav()">&#9776;</span>
+          </div>
+        <div class="container"style="margin-top:7%">
+            <form>
+            <div class="row" >
+                <div class="column" style="width: 50%;">
+                    
+                     <div class="row" style="margin-bottom: 3%;">
+                     <div class="column"style="width:30%">
+                        <label style="font-size: 20px;" for="name"> Name  </label>
+                    </div>
+                    <div class="column">
+                        <input type="text"placeholder="FULL NAME" id="name" style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;"/>
+                    </div>
+                     </div>
+                     <div class="row" style="margin-bottom:3% ;">
+                        <div class="column"style="width:30%">
+                           <label style="font-size: 18px;" for="name"> Father's / Husband Name </label>
+                       </div>
+                       <div class="column" style="padding-top:1% ;">
+                           <input type="text"placeholder="Father's/Husband Name" id="name" style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;"/>
+                       </div>
+                        </div>
+                        <div class="row"style="margin-bottom:3%">
+                            <div class="column"style="width:30%">
+                               <label style="font-size: 20px;" for="name"> Gender  </label>
+                           </div>
+                           <div class="column">
+                            <input type="radio" id="male" name="gender" value="male" style="margin-left: 2px ;">
+                            <label for="male" style="font-size: 20px;padding-left: 4px;">Male</label>
+                            <input type="radio" id="female" name="gender" value="female"style="margin-left:2px">
+                            <label for="female"style="font-size: 20px;padding-left:4px">Female</label>
+                            <input type="radio" id="other" name="gender" value="other"style="margin-left:2px">
+                            <label for="other"style="font-size:20px;padding-left:4px">Other</label>
+                           </div>
+                        </div>
+                            <div class="row" style="margin-bottom:3% ;">
+                                <div class="column"style="width:30%">
+                                   <label style="font-size: 20px;" for="name"> Email  </label>
+                               </div>
+                               <div class="column">
+                                   <input type="email"placeholder="Example@gmail.com" id="name" style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;"/>
+                               </div>
+                                </div>
+                                <div class="row"style="margin-bottom:3%">
+                                    <div class="column"style="width:30%">
+                                       <label style="font-size: 20px;" for="name"> D.O.B  </label>
+                                   </div>
+                                   <div class="column">
+                                       <input type="date" id="name" style="padding-left: 9px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;width: 120%;"/>
+                                   </div>
+                                    </div>
+                                    <div class="row"style="margin-bottom:3%">
+                                        <div class="column"style="width:30%">
+                                           <label style="font-size: 20px;" for="name"> Marital Status </label>
+                                       </div>
+                                       <div class="column">
+                                        <input type="radio" id="male" name="gender" value="Single" style="margin-left: 2px ;">
+                                        <label for="male" style="font-size: 20px;padding-left: 4px;">Single</label>
+                                        <input type="radio" id="female" name="gender" value="Married"style="margin-left:2px">
+                                        <label for="female"style="font-size: 20px;padding-left:4px">Married</label>
+                                       </div>
+                                    </div>
+                                    <div class="row" style="margin-bottom:3% ;">
+                                        <div class="column"style="width:30%">
+                                           <label style="font-size: 20px;" for="name"> Mobile No.  </label>
+                                       </div>
+                                       <div class="column">
+                                           <input type="tel"placeholder="9999999999" pattern="[1-9]{1}[0-9]{9}" maxlength="10" id="name" style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;"/>
+                                       </div>
+                                        </div>
+                                        <div class="row" style="margin-bottom:3% ;">
+                                            <div class="column"style="width:30%;">
+                                               <label style="font-size: 20px;" for="name">Address </label>
+                                           </div>
+                                           <div>
+                                           <textarea placeholder="Message"style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;resize:none;overflow:auto;width:100%"></textarea> 
+                                            </div>
+                                        </div>
+                                            <div class="row" style="margin-bottom:3% ;">
+                                                <div class="column"style="width:30%;">
+                                                   <label style="font-size: 20px;" for="name">City </label>
+                                               </div>
+                                               <div>
+                                                <input class="input"  list="city" placeholder="Delhi"style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;" >
+        
+                                                <datalist id="city">
+                                                <option value="Delhi">
+                                                <option value="Noida">
+                                                <option value="Gaziabad">
+                                                <option value="Gurugram">
+                                                </datalist>
+                                               </div>
+                                               </div>
+                </div>
+                <div class="column" style="width: 50%;">
+                    <div class="row"style="margin-bottom:3%">
+                        <div class="column"style="width:30%">
+                           <label style="font-size: 20px;" for="name"> Qualification  </label>
+                       </div>
+                       <input class="input"  list="qualification" placeholder="5th"style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;" >
+        
+                       <datalist id="qualification">
+                       <option value="5th ">
+                       <option value="8th">
+                       <option value="10th">
+                       <option value="12th">
+                       </datalist>
+                    </div>
+                    <div class="row"style="margin-bottom:3%">
+                        <div class="column"style="width:30%">
+                           <label style="font-size: 20px;" for="name">Work Experience</label>
+                       </div>
+                       <div class="column">
+                        <input type="radio" id="male" name="gender" value="Experienced" style="margin-left: 2px ;">
+                        <label for="male" style="font-size: 20px;padding-left: 4px;">Experienced</label>
+                        <input type="radio" id="female" name="gender" value="Feshers"style="margin-left:2px">
+                        <label for="female"style="font-size: 20px;padding-left:4px">Feshers</label>
+                        
+                       </div>
+                    </div>
+                    <div class="row"style="margin-bottom:3%">
+                        <div class="column"style="width:30%">
+                           <label style="font-size: 20px;" for="name">Work For</label>
+                       </div>
+                       <div class="column">
+                        <input class="input" list="services" placeholder="Select A Service" style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;" >
+        
+                        <datalist id="services">
+                        <option value="Baby Care">
+                        <option value="Patient Care">
+                        <option value="Senior Citizen Care">
+                        <option value="Maid Service">
+                        <option value="Domestic Help">
+                      <option value="Cook Service">
+                        </datalist>
+                        
+                       </div>
+                    </div>
+                    <div class="row"style="margin-bottom:3%">
+                        <div class="column"style="width:30%">
+                           <label style="font-size: 20px;" for="name">Job Timing</label>
+                       </div>
+                       <div class="column">
+                        <input type="radio" id="male" name="gender" value="1/2 Hours" style="margin-left: 2px ;">
+                        <label for="male" style="font-size: 20px;padding-left: 4px;">1/2 Hours</label>
+                        <br>
+                        <input type="radio" id="female" name="gender" value="4/6 Hours"style="margin-left:2px">
+                        <label for="female"style="font-size: 20px;padding-left:4px">4/6 Hours</label>
+                        <br>
+                        <input type="radio" id="male" name="gender" value="8/10 Hours" style="margin-left: 2px ;">
+                        <label for="male" style="font-size: 20px;padding-left: 4px;">8/10 Hours</label>
+                        <br>
+                        <input type="radio" id="female" name="gender" value="10/12 Hours"style="margin-left:2px">
+                        <label for="female"style="font-size: 20px;padding-left:4px">10/12 Hours</label>
+                        
+                        
+                       </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 3%;">
+                        <div class="column"style="width:30%">
+                           <label style="font-size: 20px;" for="name"> Upload Image</label>
+                       </div>
+                       <div class="column">
+                        <input type="file" id="myfile" name="myfile" style="border: 2px solid;border-radius: 4px;">
+                       </div>
+                        </div>
+                        <div class="row" style="margin-bottom: 3%;">
+                            <div class="column"style="width:30%">
+                               <label style="font-size: 20px;" for="name"> Upload Resume</label>
+                           </div>
+                           <div class="column">
+                            <input type="file" id="myfile" name="myfile" style="border: 2px solid;border-radius: 4px;">
+                           </div>
+                            </div>
+                            <div class="row" style="margin-bottom: 3%;">
+                                <div class="column" style="padding-top: 1%;">
+                                    <input type="checkbox" style="border: 2px solid;border-radius: 4px;width: 15px;height: 15px;">
+                                   
+                               </div>
+                               <div class="column">
+                                <label style="font-size: 18px;" for="name"><a href="terms.html">Terms and Conditions read</a></label>
+                               </div>
+                                </div>
+                </div>
+            </div>
+            <div style="display: block;margin-left: auto;margin-right: auto;"><input type="submit" value="Submit" style="display: block;margin-left: auto;margin-right: auto;width: 10%;padding: 1%;border: 1px solid;border-radius: 5px;" /> </div>
+            </form>
+          </div>
+       
+          <div class="container-fluid five column grid text-light" style="background-color:#00203FFF;overflow: hidden;padding: 2%;">
+            <div class="row">
+                <div class="column col-lg-3 col-md-3 col-sm-12" style="text-align: justify;font-size:16px;color: #ADEFD1FF;">
+                    <div  style="text-align: center;">
+                        <h3>About MekService</h3>
+                    </div>
+                    <div>
+                       <p> MekService is the leading platform for connecting individuals looking for Manpower Services with top-equality ,pre-screened independent cleaners.</p>
+                       <p> With a Seamless 60-second booking process,Secure payment and a 100% happiness guarantee,MekServices is the easiest,most convenient way to book</p>
+                    </div>
+                </div>
+                <div class="column col-lg-3 col-md-3 col-sm-12 "style="color: #ADEFD1FF;text-align:center;padding-bottom:2%">
+                    <div class="lil1" style="text-align: center;">
+                        <h3>Locations</h3>
+                    </div>
+                    <div style="display: block;">
+                        <a href="" style="display:block;color:#ADEFD1FF ;">Delhi</a>
+                            <a href="" style="display:block;color:#ADEFD1FF ;">Noida</a>
+                            <a href="" style="display:block;color:#ADEFD1FF ;">Gaziabad</a>
+                            <a href="" style="display:block;color:#ADEFD1FF ;">Gurugram</a>
+                    </div>
+                </div>
+                <div class="column col-lg-3 col-md-3 col-sm-12 lil2"style="color: #ADEFD1FF;text-align:center;padding-bottom:2%">
+                    <div  style="text-align: center;">
+                        <h3>Services</h3>
+                    </div>
+                    <div >
+                            <a href="" style="display:block;color:#ADEFD1FF ;">Baby Care</a>
+                            <a href="" style="display:block;color:#ADEFD1FF ;">Patient Care</a>
+                            <a href="" style="display:block;color:#ADEFD1FF ;">Senior Citizen Care</a>
+                            <a href="" style="display:block;color:#ADEFD1FF ;">Maid Service</a>
+                            <a href="" style="display:block;color:#ADEFD1FF ;">Domestic Help</a>
+                            <a href="" style="display:block;color:#ADEFD1FF ;">Cook Services</a>
+                            <br>
+                            <a href="" style="color:#ADEFD1FF  ;"><button class="btn"style="background-color: #F2AA4CFF;;color:#ADEFD1FF  ;">Book Now</button></a>
+      
+                    </div>
+                </div>
+                <div class="column col-lg-2 col-md-3 col-sm-12"style="text-align: center;color:#ADEFD1FF;">
+                    <div  style="text-align: center;">
+                        <h3>Get In Touch</h3>
+                    </div>
+                <div >
+                    <p style="display:block;color:#ADEFD1FF ;">8882357154</p>
+                    <p  style="display:block;color:#ADEFD1FF ;">Arya Nagar</p>
+                    <p  style="display:block;color:#ADEFD1FF ;">South Delhi</p>
+                    <p  style="display:block;color:#ADEFD1FF ;">110047</p>
+                    
+            </div>
+            </div>
+      </div>
+        </div>
+      
+        <div class="footer bg-dark  container-fluid text-light"style="overflow:auto" >
+            <p style="padding:1%">&copy; Copyrigth</p>
+        </div>
+        <script>
+            function openNav() {
+              document.getElementById("myNav").style.display = "block";
+            }
+            
+            function closeNav() {
+              document.getElementById("myNav").style.display = "none";
+            }
+            </script>
+    </body>
+</html>
