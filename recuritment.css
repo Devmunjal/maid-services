@@ -97,3 +97,12 @@
       body {
         font-family: 'Lato', sans-serif,-apple-system, BlinkMacSystemFont,roboto,Arial, Helvetica, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
       }
+.image2{
+        background-image: url("images/meeting.jpg");
+        background-repeat:no-repeat;
+        opacity: 0.8;
+        object-fit: contain;
+        background-color:lightgray ;
+        background-size: cover;
+    
+      }
