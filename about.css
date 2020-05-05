@@ -60,12 +60,14 @@
     text-shadow: 2px 2px 7px white ;
   }
   .image2{
-    background-image: url("images/meeting.jpg");
+   
+    background-image: url("images/23184.jpg");
     background-repeat:no-repeat;
-    opacity: 0.8;
+    opacity: 0.5;
     object-fit: contain;
-    background-color:lightgray ;
+    background-color:rgba(0,0,0,0.7) ;
     background-size: cover;
+    background-position: center;
 
   }
   body {
