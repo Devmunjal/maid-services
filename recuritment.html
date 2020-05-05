@@ -8,6 +8,10 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="recuritment.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>  
     </head>
     <body>
         <div class="flex-container  navbar  fixed-top text-light "style="background-color:#00203FFF;opacity:1" >
@@ -35,15 +39,15 @@
             <img src="logo" alt="logo" />
             <span style="font-size:30px;cursor:pointer;float: right;padding: 1%;" onclick="openNav()">&#9776;</span>
           </div>
-         <div class="image2 container-fluid" style="width:100%;padding-top: 4%;padding-bottom:15%;overflow: hidden;position: relative;background-color: lightgray;">
+          <div class="image2 container-fluid" style="width:100%;padding-top: 6%;padding-bottom:19%;overflow: hidden;position: relative;background-color: lightgray;">
            
         </div>
-        <div style="display: block;margin-left: auto;margin-right: auto;padding-top: 10%;position: absolute;top: 1%;left:45%;">
+        <div style="display: block;margin-left: auto;margin-right: auto;padding-top: 13%;position: absolute;top: 1%;left:45%;">
             <h1 class="text-dark"style="font-weight:bold">Jobs</h1>
         </div>
-        <div class="container"style="margin-top:1%;margin-bottom:1%;border:1px solid;border-radius:4px;background-color:#f6f6f6;padding:1%;">
+        <div class="container"style="margin-top:2%;border:1px solid;border-radius:4px;background-color:#f6f6f6;padding:1%;margin-bottom:1%">
             <form>
-            <div class="row"style="margin-left: 5%;" >
+            <div class="row" style="margin-left: 5%;" >
                 <div class="column" style="width: 50%;">
                     
                      <div class="row" style="margin-bottom: 3%;">
@@ -56,15 +60,15 @@
                      </div>
                      <div class="row" style="margin-bottom:3% ;">
                         <div class="column"style="width:30%">
-                           <label style="font-size: 18px;" for="name"> Father's / Husband Name </label>
+                           <label style="font-size: 18px;" for="father"> Father's / Husband Name </label>
                        </div>
                        <div class="column" style="padding-top:1% ;">
-                           <input type="text"placeholder="Father's/Husband Name" id="name" style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;"/>
+                           <input type="text"placeholder="Father's/Husband Name" id="father" style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;"/>
                        </div>
                         </div>
                         <div class="row"style="margin-bottom:3%">
                             <div class="column"style="width:30%">
-                               <label style="font-size: 20px;" for="name"> Gender  </label>
+                               <label style="font-size: 20px;" for="gender"> Gender  </label>
                            </div>
                            <div class="column">
                             <input type="radio" id="male" name="gender" value="male" style="margin-left: 2px ;">
@@ -77,42 +81,42 @@
                         </div>
                             <div class="row" style="margin-bottom:3% ;">
                                 <div class="column"style="width:30%">
-                                   <label style="font-size: 20px;" for="name"> Email  </label>
+                                   <label style="font-size: 20px;" for="email"> Email  </label>
                                </div>
                                <div class="column">
-                                   <input type="email"placeholder="Example@gmail.com" id="name" style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;"/>
+                                   <input type="email"placeholder="Example@gmail.com" id="email" style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;"/>
                                </div>
                                 </div>
                                 <div class="row"style="margin-bottom:3%">
                                     <div class="column"style="width:30%">
-                                       <label style="font-size: 20px;" for="name"> D.O.B  </label>
+                                       <label style="font-size: 20px;" for="dob"> D.O.B  </label>
                                    </div>
                                    <div class="column">
-                                       <input type="date" id="name" style="padding-left: 9px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;width: 120%;"/>
+                                       <input type="date" id="dob" style="padding-left: 9px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;width: 120%;"/>
                                    </div>
                                     </div>
                                     <div class="row"style="margin-bottom:3%">
                                         <div class="column"style="width:30%">
-                                           <label style="font-size: 20px;" for="name"> Marital Status </label>
+                                           <label style="font-size: 20px;" for="marital"> Marital Status </label>
                                        </div>
                                        <div class="column">
-                                        <input type="radio" id="male" name="gender" value="Single" style="margin-left: 2px ;">
+                                        <input type="radio" id="male" name="marital" value="Single" style="margin-left: 2px ;">
                                         <label for="male" style="font-size: 20px;padding-left: 4px;">Single</label>
-                                        <input type="radio" id="female" name="gender" value="Married"style="margin-left:2px">
+                                        <input type="radio" id="female" name="marital" value="Married"style="margin-left:2px">
                                         <label for="female"style="font-size: 20px;padding-left:4px">Married</label>
                                        </div>
                                     </div>
                                     <div class="row" style="margin-bottom:3% ;">
                                         <div class="column"style="width:30%">
-                                           <label style="font-size: 20px;" for="name"> Mobile No.  </label>
+                                           <label style="font-size: 20px;" for="mobile"> Mobile No.  </label>
                                        </div>
                                        <div class="column">
-                                           <input type="tel"placeholder="9999999999" pattern="[1-9]{1}[0-9]{9}" maxlength="10" id="name" style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;"/>
+                                           <input type="tel"placeholder="9999999999" pattern="[1-9]{1}[0-9]{9}" maxlength="10" id="mobile" style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;"/>
                                        </div>
                                         </div>
                                         <div class="row" style="margin-bottom:3% ;">
                                             <div class="column"style="width:30%;">
-                                               <label style="font-size: 20px;" for="name">Address </label>
+                                               <label style="font-size: 20px;" for="address">Address </label>
                                            </div>
                                            <div>
                                            <textarea placeholder="Message"style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;resize:none;overflow:auto;width:100%"></textarea> 
@@ -120,7 +124,7 @@
                                         </div>
                                             <div class="row" style="margin-bottom:3% ;">
                                                 <div class="column"style="width:30%;">
-                                                   <label style="font-size: 20px;" for="name">City </label>
+                                                   <label style="font-size: 20px;" for="city">City </label>
                                                </div>
                                                <div>
                                                 <input class="input"  list="city" placeholder="Delhi"style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;" >
@@ -137,7 +141,7 @@
                 <div class="column" style="width: 50%;padding-left: 7%;">
                     <div class="row"style="margin-bottom:3%">
                         <div class="column"style="width:30%">
-                           <label style="font-size: 20px;" for="name"> Qualification  </label>
+                           <label style="font-size: 20px;" for="qualification"> Qualification  </label>
                        </div>
                        <input class="input"  list="qualification" placeholder="5th"style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;" >
         
@@ -150,19 +154,19 @@
                     </div>
                     <div class="row"style="margin-bottom:3%">
                         <div class="column"style="width:30%">
-                           <label style="font-size: 20px;" for="name">Work Experience</label>
+                           <label style="font-size: 20px;" for="work">Work Experience</label>
                        </div>
                        <div class="column">
-                        <input type="radio" id="male" name="gender" value="Experienced" style="margin-left: 2px ;">
+                        <input type="radio" id="male" name="work" value="Experienced" style="margin-left: 2px ;">
                         <label for="male" style="font-size: 20px;padding-left: 4px;">Experienced</label>
-                        <input type="radio" id="female" name="gender" value="Feshers"style="margin-left:2px">
+                        <input type="radio" id="female" name="work" value="Feshers"style="margin-left:2px">
                         <label for="female"style="font-size: 20px;padding-left:4px">Feshers</label>
                         
                        </div>
                     </div>
                     <div class="row"style="margin-bottom:3%">
                         <div class="column"style="width:30%">
-                           <label style="font-size: 20px;" for="name">Work For</label>
+                           <label style="font-size: 20px;" for="services">Work For</label>
                        </div>
                        <div class="column">
                         <input class="input" list="services" placeholder="Select A Service" style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;" >
@@ -180,19 +184,19 @@
                     </div>
                     <div class="row"style="margin-bottom:3%">
                         <div class="column"style="width:30%">
-                           <label style="font-size: 20px;" for="name">Job Timing</label>
+                           <label style="font-size: 20px;" for="time">Job Timing</label>
                        </div>
                        <div class="column">
-                        <input type="radio" id="male" name="gender" value="1/2 Hours" style="margin-left: 2px ;">
+                        <input type="radio" id="male" name="time" value="1/2 Hours" style="margin-left: 2px ;">
                         <label for="male" style="font-size: 20px;padding-left: 4px;">1/2 Hours</label>
                         <br>
-                        <input type="radio" id="female" name="gender" value="4/6 Hours"style="margin-left:2px">
+                        <input type="radio" id="female" name="time" value="4/6 Hours"style="margin-left:2px">
                         <label for="female"style="font-size: 20px;padding-left:4px">4/6 Hours</label>
                         <br>
-                        <input type="radio" id="male" name="gender" value="8/10 Hours" style="margin-left: 2px ;">
+                        <input type="radio" id="male" name="time" value="8/10 Hours" style="margin-left: 2px ;">
                         <label for="male" style="font-size: 20px;padding-left: 4px;">8/10 Hours</label>
                         <br>
-                        <input type="radio" id="female" name="gender" value="10/12 Hours"style="margin-left:2px">
+                        <input type="radio" id="female" name="time" value="10/12 Hours"style="margin-left:2px">
                         <label for="female"style="font-size: 20px;padding-left:4px">10/12 Hours</label>
                         
                         
@@ -200,7 +204,7 @@
                     </div>
                     <div class="row" style="margin-bottom: 3%;">
                         <div class="column"style="width:30%">
-                           <label style="font-size: 20px;" for="name"> Upload Image</label>
+                           <label style="font-size: 20px;" for="myfile"> Upload Image</label>
                        </div>
                        <div class="column">
                         <input type="file" id="myfile" name="myfile" style="border: 2px solid;border-radius: 4px;">
@@ -208,10 +212,10 @@
                         </div>
                         <div class="row" style="margin-bottom: 3%;">
                             <div class="column"style="width:30%">
-                               <label style="font-size: 20px;" for="name"> Upload Resume</label>
+                               <label style="font-size: 20px;" for="uploadres"> Upload Resume</label>
                            </div>
                            <div class="column">
-                            <input type="file" id="myfile" name="myfile" style="border: 2px solid;border-radius: 4px;">
+                            <input type="file" id="myfile" name="uploadres" style="border: 2px solid;border-radius: 4px;">
                            </div>
                             </div>
                             <div class="row" style="margin-bottom: 3%;">
@@ -220,7 +224,7 @@
                                    
                                </div>
                                <div class="column">
-                                <label style="font-size: 18px;" for="name"><a href="terms.html" style="color:black;">Terms and Conditions read</a></label>
+                                <label style="font-size: 18px;" for="terms"><a href="terms.html">Terms and Conditions read</a></label>
                                </div>
                                 </div>
                 </div>
@@ -239,13 +243,19 @@
                        <p> MekService is the leading platform for connecting individuals looking for Manpower Services with top-equality ,pre-screened independent cleaners.</p>
                        <p> With a Seamless 60-second booking process,Secure payment and a 100% happiness guarantee,MekServices is the easiest,most convenient way to book</p>
                     </div>
+                    <div style="display: inline-block;margin-left: 2%;">
+                        <i class="fab fa-facebook fa-3x"style="padding-right:6px" ></i>
+                        <i class="fab fa-instagram fa-3x"style="padding-right:6px" ></i>
+                        <i class="fab fa-twitter fa-3x"style="padding-right:6px" ></i>
+                        <i class="fab fa-youtube fa-3x"style="padding-right:6px" ></i>
+                    </div>
                 </div>
                 <div class="column col-lg-3 col-md-3 col-sm-12 "style="color: #ADEFD1FF;text-align:center;padding-bottom:2%">
                     <div class="lil1" style="text-align: center;">
                         <h3>Locations</h3>
                     </div>
                     <div style="display: block;">
-                        <a href="" style="display:block;color:#ADEFD1FF ;">Delhi</a>
+                        <a href="javascript:void(0)" style="display:block;color:#ADEFD1FF ;">Delhi</a>
                             <a href="" style="display:block;color:#ADEFD1FF ;">Noida</a>
                             <a href="" style="display:block;color:#ADEFD1FF ;">Gaziabad</a>
                             <a href="" style="display:block;color:#ADEFD1FF ;">Gurugram</a>
@@ -256,14 +266,14 @@
                         <h3>Services</h3>
                     </div>
                     <div >
-                            <a href="" style="display:block;color:#ADEFD1FF ;">Baby Care</a>
-                            <a href="" style="display:block;color:#ADEFD1FF ;">Patient Care</a>
-                            <a href="" style="display:block;color:#ADEFD1FF ;">Senior Citizen Care</a>
-                            <a href="" style="display:block;color:#ADEFD1FF ;">Maid Service</a>
-                            <a href="" style="display:block;color:#ADEFD1FF ;">Domestic Help</a>
-                            <a href="" style="display:block;color:#ADEFD1FF ;">Cook Services</a>
+                            <a href="services.html" style="display:block;color:#ADEFD1FF ;">Baby Care</a>
+                            <a href="services.html" style="display:block;color:#ADEFD1FF ;">Patient Care</a>
+                            <a href="services.html" style="display:block;color:#ADEFD1FF ;">Senior Citizen Care</a>
+                            <a href="services.html" style="display:block;color:#ADEFD1FF ;">Maid Service</a>
+                            <a href="services.html" style="display:block;color:#ADEFD1FF ;">Domestic Help</a>
+                            <a href="services.html" style="display:block;color:#ADEFD1FF ;">Cook Services</a>
                             <br>
-                            <a href="" style="color:#ADEFD1FF  ;"><button class="btn"style="background-color: #F2AA4CFF;;color:#ADEFD1FF  ;">Book Now</button></a>
+                            <a href="booknow.html" style="color:#ADEFD1FF  ;"><button class="btn"style="background-color: #F2AA4CFF;;color:#ADEFD1FF  ;">Book Now</button></a>
       
                     </div>
                 </div>
@@ -282,7 +292,7 @@
       </div>
         </div>
       
-        <div class="footer container-fluid text-light"style="overflow:auto;background-color:black;" >
+        <div class="footer  container-fluid text-light"style="overflow:auto;background-color:black;" >
             <p style="padding:1%">&copy; Copyrigth</p>
         </div>
         <script>
