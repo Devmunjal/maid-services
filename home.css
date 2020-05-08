@@ -175,7 +175,7 @@
   display: block;
 }
 #uppertextp {
-  font-size: 30px;
+  font-size: 2vw;
   color: #00203FFF;
 
   font-family: Saab;
@@ -183,7 +183,7 @@
 }
 
 #uppertextp2 {
-  font-size: 50px;
+  font-size: 4vw;
   font-family: Sarai;
 }
 .locations>a{
@@ -219,7 +219,7 @@
   font-size: 8vw;
 }
 .upper2{
-  top: 10%;
+  top: 8%;
 }
     .img{
     padding-top:41% ;
