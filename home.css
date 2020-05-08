@@ -120,6 +120,7 @@
     background-image: url("images/4108.jpg");
     background-repeat:no-repeat;
     background-color:black ;
+      opacity:0.8;
     background-position: center;
     background-size: cover;
     padding-top:15%;
@@ -219,7 +220,7 @@
   font-size: 8vw;
 }
 .upper2{
-  top: 8%;
+  top: 7%;
 }
     .img{
     padding-top:41% ;
