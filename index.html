@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<htmlte lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -19,10 +19,10 @@
     </head>
 
 <body  style="overflow-x: hidden;">
-    <div class="flex-container  navbar  fixed-top text-light "style="background-color:#00203FFF;opacity:1;" >
+    <div class="flex-container  navbar  fixed-top text-light "style="background-color:#00203FFF;opacity:1;overflow-x: hidden" >
         <img src="#" alt="LOGO"/>
         <ul class="list">
-            <li class="list1"><a href="index.html">Home</a></li>
+            <li class="list1"><a href="index.html" >Home</a></li>
             <li class="list1"><a href="about.html">About Us</a></li>
             <li class="list1"><a href="terms.html">Terms</a></li>
             <li class="list1"><a href="recuritment.html">Career</a></li>
@@ -30,7 +30,7 @@
             <li class="col-lg-1 col-md-2 list1" style="border-width: 1px;border-radius:8px;background-color: #ADEFD1FF;box-shadow: 0px 0px 7px silver;"><a href="#" style="color: black;">Get A Quote</a></li>
         </ul>
     </div>
-    <div id="myNav" class="overlay">
+    <div id="myNav" class="overlay" style="overflow: hidden">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
             <a href="index.html">HOME</a>
@@ -40,36 +40,34 @@
           <a href="contactus.html">Contact Us</a>
         </div>
       </div>
-      <div class=" container-fluid smallnav text-light" style="overflow: hidden;background-color: #00203FFF;">
+      <div class=" container-fluid smallnav text-light fixed-top" style="overflow: hidden;background-color: #00203FFF;">
         <img src="logo" alt="logo" />
-        <span style="font-size:30px;cursor:pointer;float: right;padding: 1%;" onclick="openNav()">&#9776;</span>
+        <span style="font-size:30px;cursor:pointer;float: right;padding: 1%;overflow: hidden" onclick="openNav()">&#9776;</span>
       </div>
       <div style="width:100%;overflow: hidden;">
-        <div class="img container-fluid" style="width:100%;padding-top: 20%;padding-bottom:20%;overflow: hidden;position: relative;background-color: lightgray;"></div>
-        <div id="upper" style="position: absolute;top: 1%;overflow: hidden;"><table>
-            <tr>
-                <td style="width:43%;">
-                    <div style="text-align: center;">
-                    <p style="font-size: 30px;color:#00203FFF;padding-top: 35%;">
-                        India's No.1 Markplace for Professional Manpower Services 
-                    </p>
-                    <p style="font-size:40px;color: #00203FFF;"> 100% Happiness Guarantee !</p>
-                    </div>
-                </td>
-                <td class="table" style="display: block;margin-left: auto;margin-right: auto; width: 57%;padding-top: 30%; padding-left: 15%;">
-                    <div style="padding-bottom: 7%;">
-                        <input class="input"  list="city" placeholder="Delhi" style="box-shadow: 0px 0px 10px black ">
-        
+        <div class="img container-fluid" style="width:100%;overflow: hidden;position: relative;background-color: lightgray;"></div>
+
+
+<div class="upper2 " style="overflow: hidden;position: absolute;width: 100%">
+  <div class="row">
+    <div class="column" style="width: 48%;text-align: center;padding: 2%">
+           <p id="uppertextp" style="color: #00203FFF;font-family: Saab;font-style: italic;">
+                        India's No.1 Markplace for Professional Manpower Services.
+           </p>
+           <p  id="uppertextp2" style="color: #00203FFF;font-family: Sarai;"> 100% Happiness Guarantee !</p>
+  </div>
+  <div class="column ram"style="width: 48%;padding-left: 3%;">
+      <input class="input"  list="city" placeholder="Delhi" style="box-shadow: 0px 0px 5px palegoldenrod ;margin-bottom: 4%">
+
                                 <datalist id="city">
                                 <option value="Delhi">
                                 <option value="Noida">
                                 <option value="Gaziabad">
                                 <option value="Gurugram">
                                 </datalist>
-                    </div>
-                    <div>
-                        <input class="input" list="services" placeholder="Select A Service" style="box-shadow:0px 0px 10px black " >
-        
+
+                        <input class="input" list="services" placeholder="Select A Service" style="box-shadow:0px 0px 5px palegoldenrod " >
+
                                 <datalist id="services">
                                 <option value="Baby Care">
                                 <option value="Patient Care">
@@ -78,13 +76,10 @@
                                 <option value="Domestic Help">
                               <option value="Cook Service">
                                 </datalist>
-                    </div>
-                </td>
-            </tr>
-        </table></div>
-      </div>
-          
-         <div class="container-fluid" style="overflow-x: hidden;overflow-y: hidden;background-color:#f4f4f4 ;">
+  </div>
+</div>
+</div>
+         <div class="container-fluid" style="overflow: hidden;overflow-y: hidden;background-color:#f4f4f4 ;">
             <table class="container">
                 <tr class="row " style="display: inline-block;padding:0.3%;">
                     <td style="text-align: center;">
@@ -351,7 +346,7 @@
                    
             </div>
           </div>
-      <div id="toast" style="width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.7);padding-top:8%;z-index: 3;position: fixed;top: 0;display:none;">
+      <div id="toast" style="width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.9);padding-top:8%;z-index: 3;position: fixed;top: 0;display:none;">
         <div class="container"style="width:90%;height:90%;background-color:white;padding:1%;border-radius:10px;overflow-y:auto">
             <span class="close" onclick="document.getElementById('toast').style.display='none'" style="position: fixed;display: block;margin-right: 0;margin-left:75%;z-index: 1;">&times;</span>
             <div class="row"style="margin-top:3%;padding:2%">
@@ -445,13 +440,13 @@
                
         </div>
       </div>
-         <div class="container-fluid offer" style="overflow: hidden;">
-            <img class="mySlides" src="images/cook.jpeg" alt="image1" style="width:60%;height: 18vw;margin-left: auto;margin-right: auto;display: block;">
-            <img class="mySlides" src="images/patient.jpg" alt="image2" style="width:60%;height: 18vw;margin-left: auto;margin-right: auto;display: block;">
-            <img class="mySlides" src="images/maid.jpeg" alt="image3" style="width:60%;height: 18vw;margin-left: auto;margin-right: auto;display: block;">
+         <div class="container offer" style="overflow: hidden;">
+            <img class="mySlides" src="images/cook.jpeg" alt="image1" style="margin-left: auto;margin-right: auto;display: block;">
+            <img class="mySlides" src="images/patient.jpg" alt="image2" style="margin-left: auto;margin-right: auto;display: block;">
+            <img class="mySlides" src="images/maid.jpeg" alt="image3" style="margin-left: auto;margin-right: auto;display: block;">
          </div>
           
-    <div class="container-fluid" style="overflow: hidden;background-image:linear-gradient(to right bottom, rgb(167, 241, 237),white,rgb(167, 241, 237));background-attachment: fixed;background-size: cover;margin-top: 0.3%">
+    <div class="container-fluid servicessback" style="overflow: hidden;background-attachment: fixed;background-size: cover;margin-top: 0.3%">
         <div class="row">
             <div class="col-sm-12 col-md-12 " style="text-align: left;">
                 <h1 class="section-heading "style="margin-bottom:1%;color:">
@@ -459,7 +454,6 @@
                 </h1>
             </div>
         </div>
-         
         <div class="row grid-services flex-container"style="margin-left:auto;margin-right:auto;">
             <div class="col-sm-6 col-md-4">
                 <div class="box-image-1" style="align-items: center;">
@@ -494,6 +488,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="col-sm-6 col-md-4">
                 <div class="box-image-1" style="align-items: center;">
                     <div class="image"style="border-radius:6px">
@@ -528,20 +523,21 @@
                 </div>
             </div>
 
+
         </div>
     </div>
     
      
-    <div class="container-fluid" >
-        <img class="mySlides1" src="images/cook.jpeg" alt="image1" style="width:60%;height: 18vw;margin-left: auto;margin-right: auto;display: block;">
-        <img class="mySlides1" src="images/patient.jpg" alt="image2" style="width:60%;height: 18vw;margin-left: auto;margin-right: auto;display: block;">
-        <img class="mySlides1" src="images/maid.jpeg" alt="image3" style="width:60%;height: 18vw;margin-left: auto;margin-right: auto;display: block;">
+    <div class="container" >
+        <img class="mySlides1" src="images/cook.jpeg" alt="image1"style="margin-left: auto;margin-right: auto;display: block;">
+        <img class="mySlides1" src="images/patient.jpg" alt="image2" style="margin-left: auto;margin-right: auto;display: block;">
+        <img class="mySlides1" src="images/maid.jpeg" alt="image3" style="margin-left: auto;margin-right: auto;display: block;">
      </div>
      <div class="container-fluid col-sm-12 text-light " style="background-color: #F2AA4CFF;">
         <div class="container">
             <div class="global"style="text-align:center;padding:0.4%">
-                <h1 style="color:antiquewhite;">
-                    We're big on trust &amp; safety.</h1>
+                <h2 class="lasthead" style="color:white;font-family:'Segoe UI';padding-bottom: 2%">
+                    We're big on trust &amp; safety.</h2>
             </div>
             <table>
                 <tr class="row text-light" style="display: inline-block;">
@@ -598,7 +594,7 @@
      <div class="container-fluid five column grid text-light" style="background-color:#00203FFF;overflow: hidden;padding: 2%;">
         <div class="row">
             <div class="column col-lg-3 col-md-3 col-sm-12" style="text-align: justify;font-size:16px;color: #ADEFD1FF;">
-                <div  style="text-align: center;">
+                <div  style="text-align: center;margin-bottom: 3%">
                     <h3>About MekService</h3>
                 </div>
                 <div>
@@ -606,48 +602,48 @@
                    <p> With a Seamless 60-second booking process,Secure payment and a 100% happiness guarantee,MekServices is the easiest,most convenient way to book</p>
                 </div>
                 <div style="display: inline-block;">
-                    <i class="fab fa-facebook fa-3x"style="padding-right:6px" ></i>
-                    <i class="fab fa-instagram fa-3x"style="padding-right:6px" ></i>
-                    <i class="fab fa-twitter fa-3x"style="padding-right:6px" ></i>
-                    <i class="fab fa-youtube fa-3x"style="padding-right:6px" ></i>
+                    <i class="fab fa-facebook fa-3x"style="padding-right:6px;margin-right: 5px" ></i>
+                    <i class="fab fa-instagram fa-3x"style="padding-right:6px;margin-right: 5px" ></i>
+                    <i class="fab fa-twitter fa-3x"style="padding-right:6px;margin-right: 5px" ></i>
+                    <i class="fab fa-youtube fa-3x"style="padding-right:6px;margin-right: 5px" ></i>
                 </div>
             </div>
-            <div class="column col-lg-3 col-md-3 col-sm-12 "style="color: #ADEFD1FF;text-align:center;padding-bottom:2%">
-                <div class="lil1" style="text-align: center;">
+            <div class="column col-lg-3 col-md-3 col-sm-12 "style="color: #ADEFD1FF;text-align:center;">
+                <div class="lil1" style="text-align: center;margin-bottom: 3%">
                     <h3>Locations</h3>
                 </div>
-                <div style="display: block;">
-                    <a href="" style="display:block;color:#ADEFD1FF ;">Delhi</a>
-                        <a href="" style="display:block;color:#ADEFD1FF ;">Noida</a>
-                        <a href="" style="display:block;color:#ADEFD1FF ;">Gaziabad</a>
-                        <a href="" style="display:block;color:#ADEFD1FF ;">Gurugram</a>
+                <div class="locations" >
+                    <a href="" style="color:#ADEFD1FF ;">Delhi</a>
+                        <a href="" style="color:#ADEFD1FF ;">Noida</a>
+                        <a href="" style="color:#ADEFD1FF ;">Gaziabad</a>
+                        <a href="" style="color:#ADEFD1FF ;">Gurugram</a>
                 </div>
             </div>
             <div class="column col-lg-3 col-md-3 col-sm-12 lil2"style="color: #ADEFD1FF;text-align:center;padding-bottom:2%">
-                <div  style="text-align: center;">
+                <div  style="text-align: center;margin-bottom: 3%">
                     <h3>Services</h3>
                 </div>
-                <div >
-                        <a href="" style="display:block;color:#ADEFD1FF ;">Baby Care</a>
-                        <a href="" style="display:block;color:#ADEFD1FF ;">Patient Care</a>
-                        <a href="" style="display:block;color:#ADEFD1FF ;">Senior Citizen Care</a>
-                        <a href="" style="display:block;color:#ADEFD1FF ;">Maid Service</a>
-                        <a href="" style="display:block;color:#ADEFD1FF ;">Domestic Help</a>
-                        <a href="" style="display:block;color:#ADEFD1FF ;">Cook Services</a>
+                <div class="services1">
+                        <a href="services.html" style="color:#ADEFD1FF ;">Baby Care </a>
+                        <a href="services.html" style="color:#ADEFD1FF ;">Patient Care </a>
+                        <a href="services.html" style="color:#ADEFD1FF ;">Senior Citizen Care </a>
+                        <a href="services.html" style="color:#ADEFD1FF ;">Maid Service </a>
+                        <a href="services.html" style="color:#ADEFD1FF ;">Domestic Help </a>
+                        <a href="services.html" style="color:#ADEFD1FF ;">Cook Services </a>
                         <br>
-                        <a href="booknow.html" style="color:#ADEFD1FF  ;"><button class="btn"style="background-color: #F2AA4CFF;color:#ADEFD1FF  ;">Book Now</button></a>
+                        <a href="booknow.html" style="color:#ADEFD1FF  ;"><button class="btn"style="background-color: #F2AA4CFF;color:#ADEFD1FF  ;padding-top: 2%">Book Now</button></a>
 
                 </div>
             </div>
             <div class="column col-lg-2 col-md-3 col-sm-12"style="text-align: center;color:#ADEFD1FF;">
-                <div  style="text-align: center;">
+                <div  style="text-align: center;margin-bottom: 3%">
                     <h3>Get In Touch</h3>
                 </div>
             <div >
-                <p style="display:block;color:#ADEFD1FF ;"> <i class="fa fa-mobile fa-1x" ></i> 8882357154</p>
+                <p style="  display:block;color:#ADEFD1FF ;"> <i class="fa fa-mobile fa-1x" ></i> 8882357154</p>
                 <p  style="display:block;color:#ADEFD1FF ;">Arya Nagar</p>
-                <p  style="display:block;color:#ADEFD1FF ;">South Delhi</p>
-                <p  style="display:block;color:#ADEFD1FF ;">110047</p>
+                <p  style="display:block;color:#ADEFD1FF ;">South Delhi (110047)</p>
+
                 
         </div>
         </div>
