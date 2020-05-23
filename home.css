@@ -4,6 +4,9 @@
     margin-bottom: 5%; 
     width: 100%;
   }
+#d{
+  font-size: 20px;
+}
     .box-image-1 .image {
       overflow: hidden;
       background-color:#00203FFF }
@@ -120,7 +123,6 @@
     background-image: url("images/4108.jpg");
     background-repeat:no-repeat;
     background-color:black ;
-      opacity:0.8;
     background-position: center;
     background-size: cover;
     padding-top:15%;
@@ -171,6 +173,7 @@
 }
 .ram{
   margin-top: 4%;
+  padding-left: 3%;
 }
 .services1>a{
   display: block;
@@ -189,6 +192,12 @@
 }
 .locations>a{
   display: block;
+}
+#iconimg{
+  width:50%;
+}
+#iconlast{
+  width: 30%;
 }
   @media screen and (min-height: 450px) {
     .overlay a {font-size: 20px}
@@ -217,10 +226,10 @@
   font-size: 5vw;
 }
 #uppertextp2{
-  font-size: 7vw;
+  font-size: 8vw;
 }
 .upper2{
-  top: 10%;
+  top: 8%;
 }
     .img{
     padding-top:41% ;
@@ -250,13 +259,21 @@
 body{
   overflow-x:hidden ;
 }
-
+#iconlast{
+  width: 50%;
+}
 .input{
   width: 70%;
   font-size: 3vw;
 }
+#d{
+  width: 70%;
+  font-size: 3vw;
+padding-left: 20%;
+}
 .ram{
   margin-top: 20%;
+  padding-left: 3%;
 }
 .locations>a{
   display: inline-block;
@@ -266,6 +283,12 @@ body{
   display: inline-block;
   padding-right: 8px;
 }
+#iconimg{
+  width: 120%;
+}
+#icontext{
+  font-size: 10px;
+}
 
 
   }
@@ -274,6 +297,25 @@ body{
       display: none;
     }
   }
+@media only screen and (min-width:680px) and (max-width:1100px){
+  .smallnav{
+    display: none;}
+    #iconimg{
+     width: 70%;
+    }
+    .upper2{
+      top: 7%;
+    }
+#uppertextp{
+  font-size: 25px;
+}
+#uppertextp2{
+  font-size: 37px;
+}
+.ram{
+  padding-left: 1%;
+}
+}
 
 
 .servicessback {

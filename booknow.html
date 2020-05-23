@@ -30,7 +30,7 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
                 <a href="index.html">HOME</a>
-              <a href="about.html">About Us</a>
+              <a href="../../PycharmProjects/untitled/templates/about.html">About Us</a>
               <a href="terms.html">Terms</a>
               <a href="recuritment.html">Career</a>
               <a href="contactus.html">Contact Us</a>
@@ -47,7 +47,7 @@
             <h1 style="font-weight:bold;display:block;text-align:center;vertical-align: 50%;font-family: cursive;font-size: 40px">Book Now</h1>
         </div>
        <div class="container two grid"style="background-color: #f4f4f4;border-radius: 8px; border: 0px solid #f4f4f4">
-       <form>
+       <form action="http://localhost:5000/book" method="post">
             <div class="row form"style="margin-top: 1%;margin-bottom: 1%;padding-top: 3%;">
                 <div class="column col-lg-6 col-md-6 col-sm-12">
 
@@ -56,7 +56,7 @@
                            <label style="font-size: 18px;" for="services">What do you want your maid to do?</label>
                        </div>
                        <div class="column"style="padding-top:2%;margin-left:5%">
-                        <input class="input" list="services" placeholder="Select A Service" style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;" >
+                        <input required class="input" name="service" list="services" placeholder="Select A Service" style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;" >
 
                         <datalist id="services">
                         <option value="Baby Care">
@@ -75,7 +75,7 @@
                                <label style="font-size: 18px;">How urgent is your requirement ?</label>
                            </div>
                            <div class="column" style="margin-left:5%;">
-                            <input type="radio"  name="urgent" value="urgent" style="margin-left: 2px ;">
+                            <input required type="radio"  name="urgent" value="urgent" style="margin-left: 2px ;">
                             <label  style="font-size: 15px;padding-left: 4px;">Urgent Requirement</label>
                             <br>
                             <input type="radio"  name="urgent" value="not-urgent"style="margin-left:2px">
@@ -88,10 +88,10 @@
                                <label style="font-size: 18px;"> Which Gender do you Prefer ?</label>
                            </div>
                            <div class="column"style="margin-left:5%;">
-                            <input type="radio" id="male" name="gender" value="male" style="margin-left: 2px ;">
+                            <input required type="radio" id="male" name="gender" value="male" style="margin-left: 2px ;">
                             <label for="male" style="font-size: 16px;padding-left: 4px;">Male</label>
                                 <br>
-                            <input type="radio" id="female" name="gender" value="female"style="margin-left:2px">
+                            <input  type="radio" id="female" name="gender" value="female"style="margin-left:2px">
                             <label for="female"style="font-size: 16px;padding-left:4px">Female</label>
                                 <br>
                             <input type="radio" id="other" name="gender" value="other"style="margin-left:2px">
@@ -103,13 +103,13 @@
                                <label style="font-size: 18px;" >Which time do you want ?</label>
                            </div>
                            <div class="column"style="margin-left:5%;">
-                            <input type="radio" id="Morning" name="time" value="1/2 Hours" style="margin-left: 2px ;">
+                            <input required type="radio" id="Morning" name="time" value="Morning" style="margin-left: 2px ;">
                             <label  style="font-size: 16px;padding-left: 4px;">Morning</label>
                             <br>
-                            <input type="radio" id="Evening" name="time" value="4/6 Hours"style="margin-left:2px">
+                            <input type="radio" id="Evening" name="time" value="evening"style="margin-left:2px">
                             <label style="font-size: 16px;padding-left:4px">Evening</label>
                             <br>
-                            <input type="radio" id="Night" name="time" value="8/10 Hours" style="margin-left: 2px ;">
+                            <input type="radio" id="Night" name="time" value="night" style="margin-left: 2px ;">
                             <label  style="font-size: 16px;padding-left: 4px;">Night</label>
 
                            </div>
@@ -119,7 +119,7 @@
                                <label style="font-size: 18px;" >How Many Hour Per Day ?</label>
                            </div>
                            <div class="column"style="margin-left:5%;">
-                            <input type="radio"  name="Hours" value="1/2 Hours" style="margin-left: 2px ;">
+                            <input required type="radio"  name="Hours" value="1/2 Hours" style="margin-left: 2px ;">
                             <label  style="font-size: 16px;padding-left: 4px;">1/2 Hours</label>
 <br>
                             <input type="radio"  name="Hours"value="4/6 Hours"style="margin-left:2px">
@@ -143,7 +143,7 @@
                            <label style="font-size: 18px;" for="name"> Name  </label>
                        </div>
                        <div class="column">
-                           <input type="text"placeholder="FULL NAME" id="name" style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;"/>
+                           <input required name="name" type="text"placeholder="FULL NAME" id="name" style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;"/>
                        </div>
                         </div>
                         <div class="row" style="margin-bottom:3% ;">
@@ -151,7 +151,7 @@
                                <label style="font-size: 18px;" > Email  </label>
                            </div>
                            <div class="column">
-                               <input type="email"placeholder="Example@gmail.com" id="name" style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;"/>
+                               <input required name="email" type="email"placeholder="Example@gmail.com"  style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;"/>
                            </div>
                             </div>
                             <div class="row" style="margin-bottom:3% ;">
@@ -159,7 +159,7 @@
                                    <label style="font-size: 18px;" > Mobile No.  </label>
                                </div>
                                <div class="column">
-                                   <input type="tel"placeholder="9999999999" pattern="[1-9]{1}[0-9]{9}" maxlength="10" id="name" style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;"/>
+                                   <input required name="mobile" type="tel"placeholder="9999999999" pattern="[1-9]{1}[0-9]{9}" maxlength="10"  style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;"/>
                                </div>
                                 </div>
                                 <div class="row" style="margin-bottom:3% ;">
@@ -167,14 +167,12 @@
                                        <label style="font-size: 18px;" for="city">City </label>
                                    </div>
                                    <div>
-                                    <input class="input"  list="city" placeholder="Delhi"style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;" >
-
-                                    <datalist id="city">
-                                    <option value="Delhi">
-                                    <option value="Noida">
-                                    <option value="Gaziabad">
-                                    <option value="Gurugram">
-                                    </datalist>
+                                    <select required name="city" class="input"  list="city" placeholder="Delhi"style="padding: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;background-color: white;font-size: 18px" >
+                                        <option value="Delhi"style="font-size: 18px">Delhi</option>
+                                        <option value="Noida"style="font-size: 18px">Noida</option>
+                                        <option value="Gaziabad"style="font-size: 18px">Gaziabad</option>
+                                        <option value="Gurugram"style="font-size: 18px">Gurugram</option>
+                                    </select>
                                    </div>
                                    </div>
                                    <div class="row" style="margin-bottom:3% ;">
@@ -182,12 +180,12 @@
                                        <label style="font-size: 18px;" >Message </label>
                                    </div>
                                    <div>
-                                   <textarea placeholder="Message"style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;resize:none;overflow:auto;width:100%"></textarea>
+                                   <textarea  name="message" placeholder="Message"style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;resize:none;overflow:auto;width:100%"></textarea>
                                     </div>
                                 </div>
                             <div class="row" style="margin-bottom: 3%;">
                                 <div class="column" style="padding-top: 1%;margin-left:5%;">
-                                    <input type="checkbox" style="border: 2px solid;border-radius: 4px;width: 15px;height: 15px;">
+                                    <input  type="checkbox" style="border: 2px solid;border-radius: 4px;width: 15px;height: 15px;" required>
 
                                </div>
                                <div class="column">

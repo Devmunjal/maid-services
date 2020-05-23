@@ -56,15 +56,16 @@
            </p>
            <p  id="uppertextp2" style="color: #00203FFF;font-family: Sarai;"> 100% Happiness Guarantee !</p>
   </div>
-  <div class="column ram"style="width: 48%;padding-left: 3%;">
-      <input class="input"  list="city" placeholder="Delhi" style="box-shadow: 0px 0px 5px palegoldenrod ;margin-bottom: 4%">
+  <div class="column ram"style="width: 48%;">
+      <select id="d" class="input"  list="city" placeholder="Delhi" style="box-shadow: 0px 0px 5px palegoldenrod ;margin-bottom: 4%;background-color: white">
 
-                                <datalist id="city">
-                                <option value="Delhi">
-                                <option value="Noida">
-                                <option value="Gaziabad">
-                                <option value="Gurugram">
-                                </datalist>
+
+          <option value="Delhi">Delhi</option>
+          <option value="Noida">Noida</option>
+          <option value="Gaziabad">Gaziabad</option>
+          <option value="Gurugram">Gurugram</option>
+      </select>
+
 
                         <input class="input" list="services" placeholder="Select A Service" style="box-shadow:0px 0px 5px palegoldenrod " >
 
@@ -85,10 +86,10 @@
                     <td style="text-align: center;">
                     <a href="javascript:void(0)"  onclick="document.getElementById('toast').style.display='block'">
                         <div >
-                            <img src="images/COOK SERVICE.svg" alt="maid" style="width: 50%;"/>
+                            <img id="iconimg" src="images/COOK SERVICE.svg" alt="maid" />
                         </div>
                         <div >
-                            <p style="color:  #006B38FF;">
+                            <p id="icontext" style="color:  #006B38FF;">
                                 Maid Service
                             </p>
                         </div>
@@ -97,10 +98,10 @@
                     <td style="text-align: center;">
                         <a href="javascript:void(0)"  onclick="document.getElementById('toast2').style.display='block'">
                         <div>
-                            <img src="images/DOMESTIC HELP copy.svg" alt="maid" style="width: 50%;"/>
+                            <img id="iconimg" src="images/DOMESTIC HELP copy.svg" alt="maid" />
                         </div>
                         <div>
-                            <p style="color:  #006B38FF;">
+                            <p id="icontext" style="color:  #006B38FF;">
                                 Domestic Help
                             </p>
                         </div>
@@ -109,10 +110,10 @@
                     <td style="text-align: center;">
                         <a href="javascript:void(0)"  onclick="document.getElementById('toast3').style.display='block'">
                         <div>
-                            <img src="images/staff.svg" alt="maid" style="width: 50%;"/>
+                            <img id="iconimg" src="images/staff.svg" alt="maid" />
                         </div>
                         <div style="display: inline-block;">
-                            <p style="color:  #006B38FF;">
+                            <p id="icontext" style="color:  #006B38FF;">
                                 Cook Service
                             </p>
                         </div>
@@ -121,10 +122,10 @@
                     <td style="text-align: center;">
                         <a href="javascript:void(0)"  onclick="document.getElementById('toast4').style.display='block'">
                         <div>
-                            <img src="images/PATIENT CARE copy.svg" alt="maid" style="width: 50%;"/>
+                            <img id="iconimg" src="images/PATIENT CARE copy.svg" alt="maid" />
                         </div>
                         <div>
-                            <p style="color:  #006B38FF;">
+                            <p id="icontext" style="color:  #006B38FF;">
                                 Patient Care
                             </p>
                         </div>
@@ -133,10 +134,10 @@
                     <td style="text-align: center;">
                         <a href="javascript:void(0)"  onclick="document.getElementById('toast6').style.display='block'">
                         <div>
-                            <img src="images/BABY CARE.svg" alt="maid" style="width: 50%;"/>
+                            <img id="iconimg"src="images/BABY CARE.svg" alt="maid" />
                         </div>
                         <div>
-                            <p style="color:  #006B38FF;">
+                            <p id="icontext" style="color:  #006B38FF;">
                                 Baby Care
                             </p>
                         </div>
@@ -145,11 +146,11 @@
                     <td class="icon" style="text-align: center;">
                         <a href="javascript:void(0)"  onclick="document.getElementById('toast5').style.display='block'">
                         <div>
-                            <img src="images/SENIOR CITIZEN copy.svg" alt="maid" style="width: 50%;"/>
+                            <img id="iconimg" src="images/SENIOR CITIZEN copy.svg" alt="maid" />
                         </div>
                         <div>
                             
-                            <p style="color:  #006B38FF;">
+                            <p id="icontext" style="color:  #006B38FF;">
                                 Senior Citizen Care
                             </p>
                         </div>
@@ -159,7 +160,7 @@
             </table>
          </div>
          <div id="toast2" style="width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.7);padding-top:8%;z-index: 3;position: fixed;top: 0;display:none;">
-            <div class="container"style="width:90%;height:90%;background-color:white;padding:1%;border-radius:10px;overflow-y:auto">
+            <div class="container"style="width:90%;height:90%;background-color:white;padding:1%;border-radius:10px;overflow-y:auto;overflow-x: hidden">
                 <span class="close" onclick="document.getElementById('toast2').style.display='none'" style="position: fixed;display: block;margin-right: 0;margin-left:75%;z-index: 1;">&times;</span>
                 <div class="row"style="margin-top:3%;padding:2%">
                     <div class="column col-lg-6 col-md-6 col-sm-12">
@@ -206,7 +207,7 @@
             </div>
           </div>
           <div id="toast3" style="width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.7);padding-top:8%;z-index: 3;position: fixed;top: 0;display:none;">
-            <div class="container"style="width:90%;height:90%;background-color:white;padding:1%;border-radius:10px;overflow-y:auto">
+            <div class="container"style="width:90%;height:90%;background-color:white;padding:1%;border-radius:10px;overflow-y:auto;overflow-x: hidden">
                 <span class="close" onclick="document.getElementById('toast3').style.display='none'" style="position: fixed;display: block;margin-right: 0;margin-left:75%;z-index: 1;">&times;</span>
                 <div class="row"style="margin-top:3%;padding:2%">
                     <div class="column col-lg-6 col-md-6 col-sm-12">
@@ -253,7 +254,7 @@
             </div>
           </div>
           <div id="toast4" style="width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.7);padding-top:8%;z-index: 3;position: fixed;top: 0;display:none;">
-            <div class="container"style="width:90%;height:90%;background-color:white;padding:1%;border-radius:10px;overflow-y:auto">
+            <div class="container"style="width:90%;height:90%;background-color:white;padding:1%;border-radius:10px;overflow-y:auto;overflow-x: hidden">
                 <span class="close" onclick="document.getElementById('toast4').style.display='none'" style="position: fixed;display: block;margin-right: 0;margin-left:75%;z-index: 1;">&times;</span>
                 <div class="row"style="margin-top:3%;padding:2%">
                     <div class="column col-lg-6 col-md-6 col-sm-12">
@@ -300,7 +301,7 @@
             </div>
           </div>
           <div id="toast6" style="width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.7);padding-top:8%;z-index: 3;position: fixed;top: 0;display:none;">
-            <div class="container"style="width:90%;height:90%;background-color:white;padding:1%;border-radius:10px;overflow-y:auto">
+            <div class="container"style="width:90%;height:90%;background-color:white;padding:1%;border-radius:10px;overflow-y:auto;overflow-x: hidden">
                 <span class="close" onclick="document.getElementById('toast6').style.display='none'" style="position: fixed;display: block;margin-right: 0;margin-left:75%;z-index: 1;">&times;</span>
                 <div class="row"style="margin-top:3%;padding:2%">
                     <div class="column col-lg-6 col-md-6 col-sm-12">
@@ -347,7 +348,7 @@
             </div>
           </div>
       <div id="toast" style="width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.9);padding-top:8%;z-index: 3;position: fixed;top: 0;display:none;">
-        <div class="container"style="width:90%;height:90%;background-color:white;padding:1%;border-radius:10px;overflow-y:auto">
+        <div class="container"style="width:90%;height:90%;background-color:white;padding:1%;border-radius:10px;overflow-y:auto;overflow-x: hidden">
             <span class="close" onclick="document.getElementById('toast').style.display='none'" style="position: fixed;display: block;margin-right: 0;margin-left:75%;z-index: 1;">&times;</span>
             <div class="row"style="margin-top:3%;padding:2%">
                 <div class="column col-lg-6 col-md-6 col-sm-12">
@@ -394,7 +395,7 @@
         </div>
       </div>
       <div id="toast5" style="width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.7);padding-top:8%;z-index: 3;position: fixed;top: 0;display:none;">
-        <div class="container"style="width:90%;height:90%;background-color:white;padding:1%;border-radius:10px;overflow-y:auto">
+        <div class="container"style="width:90%;height:90%;background-color:white;padding:1%;border-radius:10px;overflow-y:auto;overflow-x: hidden">
             <span class="close" onclick="document.getElementById('toast5').style.display='none'" style="position: fixed;display: block;margin-right: 0;margin-left:75%;z-index: 1;">&times;</span>
             <div class="row"style="margin-top:3%;padding:2%">
                 <div class="column col-lg-6 col-md-6 col-sm-12">
@@ -543,7 +544,7 @@
                 <tr class="row text-light" style="display: inline-block;">
                     <td style="text-align: center;">
                         <div>
-                            <img src="images/name.png" alt="maid" style="width: 30%;"/>
+                            <img id="iconlast" src="images/name.png" alt="maid" />
                         </div>
                         <div>
                             <p >
@@ -551,10 +552,10 @@
                             </p>
                         </div>
                     </td>
-                    <td style="text-align: center;">
+                    <td style="text-align: center">
                         
                         <div>
-                            <img src="images/document.png" alt="maid" style="width: 30%;"/>
+                            <img id="iconlast" src="images/document.png" alt="maid" />
                         </div>
                         <div>
                             <p>
@@ -564,7 +565,7 @@
                     </td>
                     <td style="text-align: center;">
                         <div>
-                            <img src="images/trading.png" alt="maid" style="width: 30%;"/>
+                            <img id="iconlast" src="images/trading.png" alt="maid" />
                         </div>
                         <div style="display: inline-block;">
                             <p>
@@ -575,7 +576,7 @@
                     <td style="text-align: center;">
                         
                         <div>
-                            <img src="images/meeting.png" alt="maid" style="width: 30%;"/>
+                            <img id="iconlast" src="images/meeting.png" alt="maid"/>
                         </div>
                         <div>
                             <p>
@@ -631,7 +632,7 @@
                         <a href="services.html" style="color:#ADEFD1FF ;">Domestic Help </a>
                         <a href="services.html" style="color:#ADEFD1FF ;">Cook Services </a>
                         <br>
-                        <a href="booknow.html" style="color:#ADEFD1FF  ;"><button class="btn"style="background-color: #F2AA4CFF;color:#ADEFD1FF  ;padding-top: 2%">Book Now</button></a>
+                        <a href="booknow.html" style="color:#ADEFD1FF  ;"><button class="btn" style="background-color: #F2AA4CFF;color:#ADEFD1FF  ;padding-top: 2%">Book Now</button></a>
 
                 </div>
             </div>
@@ -696,6 +697,7 @@
            document.getElementById("content").style.display="block";
        }
      </script>
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>

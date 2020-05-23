@@ -67,7 +67,7 @@
   }
   .image2{
    
-    background-image: url("images/23184.jpg");
+    background-image: url('images/23184.jpg');
     background-repeat:no-repeat;
     opacity: 0.5;
     padding-top: 12%;

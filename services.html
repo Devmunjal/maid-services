@@ -12,6 +12,7 @@
         <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>   
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="services.css"/>
+      
 </head>
 <body>
 <div class="flex-container  navbar  fixed-top text-light "style="background-color:#00203FFF;opacity:1" >
@@ -29,10 +30,10 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
                 <a href="index.html">HOME</a>
-              <a href="about.html">About Us</a>
+              <a href="../../PycharmProjects/untitled/templates/about.html">About Us</a>
               <a href="terms.html">Terms</a>
-              <a href="recuritment.html">Career</a>
-              <a href="contactus.html">Contact Us</a>
+              <a href="../../PycharmProjects/untitled/templates/recuritment.html">Career</a>
+              <a href="../../PycharmProjects/untitled/templates/contactus.html">Contact Us</a>
             </div>
           </div>
           <div class=" container-fluid fixed-top smallnav text-light" style="overflow: hidden;background-color: #00203FFF;">
@@ -46,8 +47,8 @@
             <h1 style="font-weight:bold;display:block;text-align:center;vertical-align: 50%;font-family: cursive;font-size: 40px">Services</h1>
 
         </div>
-      <div class="container"style="overflow: hidden;margin-top:2%;background-image:linear-gradient(to bottom,#4dc6f9,white,white,#4dc6f9);background-attachment: fixed;background-size: cover;padding:1%;border-radius:12px">
-        <div class="row">
+      <div class="container"style="overflow: hidden;margin-top:2%;background-image:linear-gradient(to bottom,#4dc6f9,white,white,white  ,#4dc6f9);background-attachment: fixed;background-size: cover;padding:1%;border-radius:12px">
+        <div class="row"id="babycare">
           <div class="column col-md-6 col-lg-6 col-sm-12">
             <div class="box">
               <div class="image"style="overflow:hidden;border-radius:12px;">
@@ -79,7 +80,7 @@
               </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row"id="patientcare">
       <div class="column col-md-6 col-lg-6 col-sm-12">
         <div class="box">
           <div class="image"style="overflow:hidden;border-radius:12px;">
@@ -109,7 +110,7 @@
       </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row"id="seniorcitizencare">
       <div class="column col-md-6 col-lg-6 col-sm-12">
         <div class="box">
           <div class="image"style="overflow:hidden;border-radius:12px;">
@@ -175,13 +176,13 @@
                 </div>
                 <div class="services1">
                         <a href="services.html" style="color:#ADEFD1FF ;">Baby Care </a>
-                        <a href="services.html" style="color:#ADEFD1FF ;">Patient Care </a>
+                        <a href="services.html"  style="color:#ADEFD1FF ;">Patient Care </a>
                         <a href="services.html" style="color:#ADEFD1FF ;">Senior Citizen Care </a>
                         <a href="services.html" style="color:#ADEFD1FF ;">Maid Service </a>
                         <a href="services.html" style="color:#ADEFD1FF ;">Domestic Help </a>
                         <a href="services.html" style="color:#ADEFD1FF ;">Cook Services </a>
                         <br>
-                        <a href="booknow.html" style="color:#ADEFD1FF  ;"><button class="btn"style="background-color: #F2AA4CFF;color:#ADEFD1FF  ;padding-top: 2%">Book Now</button></a>
+                        <a href="booknow.html" style="color:#ADEFD1FF  ;"><button class="btn" style="background-color: #F2AA4CFF;color:#ADEFD1FF  ;padding-top: 2%">Book Now</button></a>
 
                 </div>
             </div>
@@ -203,6 +204,8 @@
   <div class="footer  container-fluid text-light"style="overflow:auto;background-color:black" >
       <p style="padding:1%">&copy; Copyrigth</p>
   </div>
+
+
       <script>
         function openNav() {
           document.getElementById("myNav").style.display = "block";

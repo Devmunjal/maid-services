@@ -93,13 +93,13 @@
                 ENQUIRE Us
             </h2>
         </div>
-        <form>
-            <input type="text"placeholder="FULL NAME" style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;width: 80%"/>
-            <input type="email" placeholder="EMAIL ADDRESS" style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3%;width: 80%"/>
-            <input type="tel"placeholder="Phone No."maxlength="10" pattern="[1-9]{1}[0-9]{4}[0-9]{5}" style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;width: 80%"/>
-            <textarea placeholder="Message"style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;resize:none;overflow:auto;width:80%"></textarea>
+        <form action="http://localhost:5000/contact" method="post">
+            <input name="name"  type="text"placeholder="FULL NAME" style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;width: 80%"/>
+            <input name="email"  type="email" placeholder="EMAIL ADDRESS" style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3%;width: 80%"/>
+            <input name="telephone" type="tel"placeholder="Phone No."maxlength="10" pattern="[1-9]{1}[0-9]{4}[0-9]{5}" style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;width: 80%"/>
+            <textarea name="message"  placeholder="Message"style="padding-left: 5px;border: 2px solid;border-radius: 7px;margin-bottom:3% ;resize:none;overflow:auto;width:80%"></textarea>
             <br>
-            <input type="submit" value="Send"  style="width: 30%;padding: 3%;border: 1px solid;border-radius: 5px;" />
+            <input type="submit" value="Send" id="send" style="width: 30%;padding: 3%;border: 1px solid;border-radius: 5px;" />
         </form>
                 </div>
             </div>
@@ -145,7 +145,7 @@
                         <a href="services.html" style="color:#ADEFD1FF ;">Domestic Help </a>
                         <a href="services.html" style="color:#ADEFD1FF ;">Cook Services </a>
                         <br>
-                        <a href="booknow.html" style="color:#ADEFD1FF  ;"><button class="btn"style="background-color: #F2AA4CFF;color:#ADEFD1FF  ;padding-top: 2%">Book Now</button></a>
+                        <a href="booknow.html" style="color:#ADEFD1FF  ;"><button class="btn" style="background-color: #F2AA4CFF;color:#ADEFD1FF  ;padding-top: 2%">Book Now</button></a>
 
                 </div>
             </div>
@@ -163,7 +163,9 @@
         </div>
 </div>
         </div>
+<div id="test">
 
+</div>
         <div class="footer   container-fluid text-light"style="overflow:auto;background-color:black" >
             <p style="padding:1%">&copy; Copyrigth</p>
         </div>
@@ -176,5 +178,18 @@
               document.getElementById("myNav").style.display = "none";
             }
             </script>
+    <script>
+        document.getElementById("send").onclick="request()";
+        function request() {
+            var request1 = new XMLHttpRequest();
+
+        }
+    </script>
+    <script>
+        function obj(this){
+         document.getElementById("test").innerHTML=this;
+
+        }
+    </script>
     </body>
 </html>
